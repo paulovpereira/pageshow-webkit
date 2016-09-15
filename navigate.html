@@ -1,7 +1,32 @@
-<html>
-
+<!DOCTYPE html>
+<!--
+You know you could be getting paid to poke around in our code?
+We're hiring designers and developers to work in Amsterdam:
+http://www.workingatbooking.com/
+-->
+<html lang="en-us" class="no-js">
 <body>
-<a href="/pageshow-webkit/">go back</a>
-</body>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
+<script>
+  $(function () {
+    $(window).on('pageshow.debug', function () {
+      $('body').prepend('PAGESHOW<br>');
+    });
+
+    $(window).on('pagehide.debug', function () {
+      $('body').prepend('PAGEHIDE<br>');
+    });
+  });
+</script>
+
+<br><br><br><br><br>
+
+NOIFRAME
+<a href="/pageshow-webkit/">GO TO INDEX</a>
+
+<br><br><br><br><br>
+
+</body>
+<!-- with love from ppereira-app! -->
 </html>
