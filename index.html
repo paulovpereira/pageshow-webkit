@@ -1,0 +1,21 @@
+<html>
+
+<body>
+
+<a href="http://www.booking.com">go to booking</a>
+
+</body>
+<script>
+        window.onpageshow = function() {
+            	console.log(arguments);
+		alert('pageshow!!');
+	  
+        };
+
+        window.onpopstate = function() {
+            alert("popstate!!");
+        };
+
+</script>
+
+</html>
